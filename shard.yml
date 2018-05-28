@@ -1,0 +1,11 @@
+name: blis
+version: 0.1.0
+
+authors:
+  - chenkovsky <chenkov@yeah.net>
+
+crystal: 0.24.2
+
+license: MIT
+scripts:
+  postinstall: cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
