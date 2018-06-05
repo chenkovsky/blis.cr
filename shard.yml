@@ -8,4 +8,4 @@ crystal: 0.24.2
 
 license: MIT
 scripts:
-  postinstall: cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
+  postinstall: git pull --recurse-submodules && cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
