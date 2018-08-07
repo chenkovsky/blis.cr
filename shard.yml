@@ -7,5 +7,3 @@ authors:
 crystal: 0.24.2
 
 license: MIT
-scripts:
-  postinstall: git clone https://github.com/flame/blis.git && cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
