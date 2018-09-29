@@ -2,6 +2,7 @@
 {% if flag?(:darwin) %}
   os = "darwin"
 {% else %}
+  os = "unk"
   raise "Not Supported"
 {% end %}
 
