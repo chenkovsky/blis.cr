@@ -1,4 +1,4 @@
-# `cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext`
+# cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
 os = if flag?(:darwin)
        "darwin"
      else
