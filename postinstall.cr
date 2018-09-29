@@ -1,9 +1,6 @@
 # cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
 {% if flag?(:darwin) %}
-  os = "darwin"
+  `ln -s ext/libblis_darwin.a ext/libblis.a`
 {% else %}
-  os = "unk"
   raise "Not Supported"
 {% end %}
-
-`ln -s ext/libblis_#{os}.a ext/libblis.a`
