@@ -22,7 +22,10 @@ TODO: Write usage instructions here
 
 ## Development
 
-TODO: Write development instructions here
+```bash
+# compile blis first
+cd blis && ./configure auto && make && make install -e INSTALL_LIBDIR=../ext
+```
 
 ## Contributing
 
